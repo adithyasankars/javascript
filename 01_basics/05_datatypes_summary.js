@@ -7,15 +7,15 @@
 
 // they are 0f 7 : String, Number , boolean , null , undefined , symbol, bigInt
 
-const score = 100
-const scoreValue = 100.3
+// const score = 100
+// const scoreValue = 100.3
 
-const isLoggedIN = false
-const oustsideTemp = null
-let userEmail;
+// const isLoggedIN = false
+// const oustsideTemp = null
+// let userEmail;
 
-const id = Symbol('123');
-const anotherId = Symbol('123');
+// const id = Symbol('123');
+// const anotherId = Symbol('123');
 
 // console.log(id === anotherId);
 
@@ -29,18 +29,18 @@ const anotherId = Symbol('123');
 // they are of 3 : Array, Objects, Functions.
 
 
-const heros = ["Ironman ", "Captain America", "Minnal Murali"];
+// const heros = ["Ironman ", "Captain America", "Minnal Murali"];
 
-let myObj = {
-    name: "Adithya",
-    age: 23
-}
+// let myObj = {
+//     name: "Adithya",
+//     age: 23
+// }
 
-const myFunction = function(){
-    console.log("Hello World");
-}
+// const myFunction = function(){
+//     console.log("Hello World");
+// }
 
-console.log(typeof bigNUmber);
+// console.log(typeof bigNUmber);
 
 // node 01_basics/05_datatypes_summary
 
@@ -62,4 +62,31 @@ console.log(typeof bigNUmber);
 
 
 */
-   
+
+
+// =================================== STACK AND HEAP ====================================
+
+// Stack => Primitive
+// Heap  => Reference
+
+// let myCar = "Volvo";
+// let newCar = "Volvo";
+
+// newCar = "Benz";
+
+// console.log(myCar);
+// console.log(newCar);
+
+
+let user1 ={
+    email: "user1@google.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1;
+
+user2.email = "adithyasankar@gmail.com";
+
+
+console.log(user1);
+console.log(user2);
