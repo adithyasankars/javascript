@@ -36,7 +36,7 @@ const coding = ["js","ruby", "java","python","cpp"]
 // const myNums = [1,2,3,4,5,6,7,8,9,10];
 
 // let newNums = myNums.filter( (num) => {
-//    return num > 4;                                       // refer arrows
+//    return num > 4;                                  // fiter is allabout true and false     // refer arrows
 // })
 
 // console.log(newNums);
