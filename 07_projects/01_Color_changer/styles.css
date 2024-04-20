@@ -3,8 +3,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(42, 195, 47);
+    background: rgb(223, 230, 223);
 
+}
+
+h1,
+h2{
+  text-align: center;
 }
 
 .canvas{
@@ -14,11 +19,11 @@ body{
     background: #212121;
     margin: 50px auto 0; 
     padding: 30px;   
-    color: rgb(42, 195, 47);
+    color: white;
 
 }
 
-sapn{
+span{
     display: block;
 }
 
@@ -27,6 +32,9 @@ sapn{
     height: 100px;
     border: solid black 2px;
     display: inline-block;
+    margin-top: 35px;
+    margin-right: 35px;
+    padding: 0 50px 0;
   }
   
   #grey {
