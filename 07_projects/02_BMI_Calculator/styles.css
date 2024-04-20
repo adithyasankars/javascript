@@ -10,69 +10,61 @@
     background: #212121;
     margin: 20px auto 0;
     display: block;
-    
 }
 
-h1,h2{
+h1, h2 {
     text-align: center;
     padding: 20px;
     color: aliceblue;
 }
 
 .form{
-
     width: 50%;
     height: 40%;
     margin: 10px auto 0;
-
 }
 
 .bmi{
     height: 100%;
     color: aliceblue;
     padding-top: 50px;
-    
 }
 
-.weight,
-.height{
+.weight, .height {
     display: block;
     font-size: 15px;
     height: 30%;
     width: 100%;
-
-
 }
 
-#weight_label,
-#height_label{
-    margin-right: 120px;
-    font-size: 20px;
+#weight_label, #height_label {
+    margin-right: 20px; /* Adjusted margin for better spacing */
+    font-size: 15px; /* Made consistent with other font sizes */
 }
 
-#btn{
+#btn {
     width: 120px;
-    height: 30px;
+    height: 40px; /* Increased height for better clickability */
     cursor: pointer;
     border-radius: 5px;
     font-size: 15px;
     font-weight: 300;
     outline: none;
     border: none;
-
+    padding: 5px 10px; /* Added padding for better appearance */
 }
 
-#btn:hover{
+#btn:hover {
     background-color: #f2800f;
     color: aliceblue;
-
 }
 
-.guide{
+.guide {
     padding-top: 40px;
+    margin-bottom: 20px; /* Added bottom margin for spacing */
 }
 
-p{
+p {
     text-align: center;
     padding: 10px;
     color: aliceblue;
