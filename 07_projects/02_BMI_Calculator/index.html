@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
 
-    <!-- ---------------------------------------styleheet-------------------------------------- -->
-
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,18 +19,19 @@
             <form action="" class="bmi">
                 
                 <div class="height">
-                    <label id="height_label" for="height">Height in CMs: </label>
+                    <label id="height_label" for="height_input">Height in CMs: </label>
                     <input id="height_input" type="text">
                 </div>
                 
                 <div class="weight">
-                    <label id="weight_label" for="height">Weight in KGs: </label>
+                    <label id="weight_label" for="weight_input">Weight in KGs: </label>
                     <input id="weight_input" type="text">
                 </div>
     
             </form>
 
             <button id="btn">Calculate</button>
+            <div id="results"></div>
         </div>
 
         <div class="guide">
