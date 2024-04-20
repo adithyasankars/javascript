@@ -1,0 +1,45 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(42, 195, 47);
+
+}
+
+.canvas{
+
+    width: 90%;
+    height: 600px;
+    background: #212121;
+    margin: 50px auto 0; 
+    padding: 30px;   
+    color: rgb(42, 195, 47);
+
+}
+
+sapn{
+    display: block;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  
