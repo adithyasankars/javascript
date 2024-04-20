@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.canvas{
+    width: 90%;
+    height: 600px;
+    background: #212121;
+    margin: 20px auto 0;
+    display: block;
+    
+}
+
+h1,h2{
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.form{
+
+    width: 50%;
+    height: 40%;
+    margin: 10px auto 0;
+
+}
+
+.bmi{
+    height: 100%;
+    color: aliceblue;
+    padding-top: 50px;
+    
+}
+
+.weight,
+.height{
+    display: block;
+    font-size: 15px;
+    height: 30%;
+    width: 100%;
+
+
+}
+
+#weight_label,
+#height_label{
+    margin-right: 120px;
+    font-size: 20px;
+}
+
+#btn{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+
+}
+
+#btn:hover{
+    background-color: #f2800f;
+    color: aliceblue;
+
+}
+
+.guide{
+    padding-top: 40px;
+}
+
+p{
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
