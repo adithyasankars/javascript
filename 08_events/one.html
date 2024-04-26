@@ -57,17 +57,35 @@
 // true - event Capturing
 
 
-document.getElementById('images').addEventListener('click',function (e) {
-    console.log('clicked inside the ul');
+// document.getElementById('images').addEventListener('click',function (e) {
+//     console.log('clicked inside the ul');
     
-})
+// })
 
-document.getElementById('cow').addEventListener('click',function (e) {
-    console.log('clicked the cow');
+// document.getElementById('cow').addEventListener('click',function (e) {
+//     console.log('clicked the cow');
     
-})
+// })
 
-// event propagation.===== bubbling
+// // event propagation.===== bubbling
+
+// // document.getElementById('google').addEventListener('click', function(e){
+// //     e.preventDefault()
+// //     console.log("google clicked");
+    
+// // }, false)
+
+
+// document.querySelector('#images').addEventListener('click', function (e) {
+//     console.log(e.target.tagName);
+//     // strict checks
+//     if (e.target.tagName === 'IMG') {
+//         console.log(e.target.id);
+//         let removeIt = e.target.parentNode
+//         removeIt.remove();
+//         // removeIt.parentNode.removeChild(removeIt)
+
+//     }
     </script>
     
 </body>
