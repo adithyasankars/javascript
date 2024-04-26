@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EVENTS</title>
+</head>
+<body style="background: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="car" src="img/car.jpg" alt="photoshop"></li>
+
+            <li><img width="200px" id="bycycle" src="img/bycycle.jpg" alt="photoshop"></li>
+
+            <li><img width="200px" id="cow" src="img/cow.jpg" alt="photoshop"></li>
+
+            <!-- <li><img width="200px" id="cow" src="img/cow.jpg" onclick="alert('cow')" alt="photoshop"></li>
+            but this is not a good practice. -->
+
+            <li><img width="200px" id="mom" src="img/mom.jpg" alt="photoshop"></li>
+
+            <li><img width="200px" id="woman" src="img/woman.jpg" alt="photoshop"></li>
+
+            <li style="color: aliceblue;"><a href="https://google.com" id="google">Google</a></li>
+
+        </ul>
+    </div>
+
+    <script>
+        
+// javascript is more of a sequential run language but there are also exceptions
+
+// document.getElementById('cow').onclick = function (){
+//     alert('cow clicked!')
+// }
+
+// but not a good practice , as it gives less parameters
+
+// attachEvent()
+// jQuery - on
+
+
+// false is default
+
+// type, timestamp, defaultPrevented
+// target, toElement , srcElement , currentTarget
+// clientX , clientY, screenX, ScreenY
+// altkey , ctrlkey , shiftKey , keyCode
+
+// document.getElementById('cow').addEventListener('click',function(e){
+//     console.log(e);
+// },false)
+
+
+// false - eventpublic
+// true - event Capturing
+
+
+document.getElementById('images').addEventListener('click',function (e) {
+    console.log('clicked inside the ul');
+    
+})
+
+document.getElementById('cow').addEventListener('click',function (e) {
+    console.log('clicked the cow');
+    
+})
+
+// event propagation.===== bubbling
+    </script>
+    
+</body>
+</html>
