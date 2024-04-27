@@ -21,19 +21,42 @@
 //     console.log('Promise 2 is consumed.');
 // })
 
-const promiseThree = new Promise (function(resolve, reject){
+// const promiseThree = new Promise (function(resolve, reject){
+//     setTimeout(function(){
+//         resolve({
+//             username:"Adithya",
+//             email:"adithya@gmail.com"
+//         });
+//     },1000)
+// })
+
+// promiseThree.then(function(user){
+//     console.log(user.username);
+
+// });
+
+const promiseFour = new Promise (function(resolve,reject){
     setTimeout(function(){
-        resolve({
-            username:"Adithya",
-            email:"adithya@gmail.com"
-        });
+
+        let error = true;
+        if(!error){
+            resolve({
+                username:"Adithya",
+                passwor:"123"
+            });
+        }else{
+            reject('ERROR: Something went wrong.');
+        }
     },1000)
 })
 
-promiseThree.then(function(user){
-    console.log(user.username);
+// promiseFour.then().catch()
 
-});
+const username = promiseFour.then((user) =>{
+    console.log(user);
+    return user.username;
+})
 
+console.log(username);
 
 // node 09_advance_one/promises.js
