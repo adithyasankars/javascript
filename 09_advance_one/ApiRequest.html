@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            width: 500px;
+            height: 600px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .container {
+            padding: 2px 16px;
+        }
+        img {
+            width: 65%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="" alt="avatar">
+        <div class="container">
+            <h3>Loading....</h3>
+            <p></p>
+        </div>
+
+        <button id="btn" type="submit">GET</button>
+    </div>
+    
+</body>
+<script>
+    // Define the URL of the GitHub API endpoint
+    const reqUrl = 'https://api.github.com/users/adithyasankars';
+
+    // Create a new instance of XMLHttpRequest
+    const xhr = new XMLHttpRequest();
+
+    // Open a new GET request to the specified URL
+    xhr.open('GET', reqUrl);
+
+    // Define a callback function to handle the response when it's ready
+    xhr.onreadystatechange = function() {
+        // Check if the request is complete (readyState 4) and the status is OK (status 200)
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                // Parse the response text as JSON
+                const data = JSON.parse(xhr.responseText);
+                
+                // Log the type of data (should be an object)
+                console.log(typeof data);
+                
+                // Log the number of followers from the response data
+                console.log(data.followers);
+
+                // update DOM
+                document.querySelector('.card img').setAttribute('src', data.avatar_url);
+                document.querySelector('.container h3').innerHTML = `${data.name}, Followers: ${data.followers}`;
+                document.querySelector('.container h3').style.fontWeight = 'bold';
+                document.querySelector('.container p').innerHTML = `${data.bio} ${data.blog}`;
+            } else {
+                console.error('Error:', xhr.statusText);
+            }
+        }
+    }
+
+    // Send the request when the button is clicked
+    document.querySelector('#btn').addEventListener('click', function() {
+        xhr.send();
+    });
+</script>
+</html>
